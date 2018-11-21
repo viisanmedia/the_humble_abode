@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="500" height="80" viewBox="0 0 500 80">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#outer-glow-1);
+      }
+
+      .cls-1, .cls-2 {
+        font-size: 55.556px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        text-anchor: middle;
+        font-family: "Lemon/Milk light";
+      }
+    </style>
+
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="2.333" in="SourceAlpha"/>
+      <feComposite/>
+      <feComposite/>
+      <feComposite result="outerGlowBlur"/>
+      <feFlood flood-opacity="0.35"/>
+      <feComposite operator="in" in2="outerGlowBlur"/>
+      <feBlend mode="screen" in2="SourceGraphic" result="outerGlow"/>
+      <feComposite in="SourceGraphic" result="shadowed"/>
+    </filter>
+  </defs>
+  <g id="artboard-1">
+    <text x="250" y="62" class="cls-1"><tspan class="cls-2">The Humble Abode</tspan></text>
+  </g>
+</svg>
