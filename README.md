@@ -1,2 +1,2 @@
-# the_humble_abode
+# The Humble Abode
 Mobile Technology Assignment
